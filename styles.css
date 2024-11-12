@@ -1,0 +1,251 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* our solution start from here  */
+
+body {
+  font-family: 'Righteous', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  height: 600px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 2px;
+}
+
+.cell {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 400;
+
+  font-size: 24px;
+  font-style: normal;
+  color: #d2ccc4;
+  color: white;
+  border-style: none;
+  background-color: rgb(52, 163, 255);
+}
+
+.titleBtn {
+  display: flex;
+  gap: 20px;
+}
+
+.restart {
+  background-color: #fc5185;
+  font-family: 'Righteous', sans-serif;
+  border-style: none;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  color: white;
+  align-self: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.ship {
+  cursor: grab;
+}
+
+.buttonImage {
+  height: 30px;
+  width: 30px;
+}
+
+.metal-mania-regular {
+  font-family: 'Metal Mania', system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kafka {
+  font-size: 60px;
+  background: linear-gradient(to right, orange, red);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.h2 {
+  margin: 10px;
+  font-size: 33px;
+  align-items: center;
+}
+
+.btn {
+  font-size: xx-large;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #34a3ff;
+  margin: 10px;
+}
+
+.rev {
+  display: flex;
+  justify-content: center;
+}
+
+.emojis {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.botman {
+  width: 150px;
+  height: 150px;
+}
